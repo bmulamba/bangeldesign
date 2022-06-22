@@ -30,7 +30,7 @@ h6 {
 p{
     font-size: 16px;
     color: #465b52;
-    margin: 15px 0 20px 0;
+    /* margin: 15px 0 20px 0; */
 }
 
 .section-p1 {
@@ -77,6 +77,15 @@ body {
     margin: 20px;
     text-decoration: none;
     position: relative;
+}
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
 }
 
 #header #navbar li a{
@@ -268,14 +277,14 @@ body {
 
 #contact .contact-detail form input {
     height: 34px;
-    min-width: 330px;
+    min-width: 230px;
     margin: 7px;
     padding: 0 .3rem ;
 }
 
 #contact .contact-detail form textarea {
     height: 140px;
-    min-width: 330px;
+    min-width: 230px;
     margin: 7px;
     padding: 0 .3rem;
 }
@@ -297,7 +306,125 @@ iframe {
     height: 40%;
 }
 
+/* footer  */
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f4f5f5;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    min-width: 30%;
+}
+
 .col img {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    /* margin-bottom: 25px; */
+}
+
+footer .follow {
+    margin-top: -2px;
+}
+
+footer h4 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+
+footer .follow i {
+    color: #465b52;
+    margin-top: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .col p {
+    margin-top: 5px;
+}
+
+footer .copyright {
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+@media (max-width : 799px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -700px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 300ms;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li{
+        top: -90px;
+        left : 0;
+        color: black;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        padding-left: 20px;
+    }
+
+    #bg-cart {
+        display: none;
+    }
+
+    #close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: #222;
+        font-size: 24px;
+        display: block;
+    }
+
+    #hero {
+        height: 70vh;
+        background-position: top 30% right 30%;
+        padding: 0 80px;
+    }
+
+    #feature {
+        justify-content: center;
+    }
+
+    #feature .featur-box {
+        margin: 15px;
+    }
+    
 }
