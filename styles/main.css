@@ -553,3 +553,14 @@ footer .copyright {
     }
 
 }
+
+
+
+
+/* shop page */
+
+#page-home{
+    background-image: url(./../img/banner/b1.jpg);
+    height: 40vh;
+}
+/* end shop page */
