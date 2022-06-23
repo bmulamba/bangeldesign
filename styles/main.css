@@ -18,7 +18,7 @@ h2 {
 }
 
 h4 {
-    font-size: 30px;
+    font-size: 27px;
     color: #222;
 }
 
@@ -129,30 +129,32 @@ body {
 }
 
 #hero h4 {
-    padding: 1rem 0;
+    padding: .5rem 0;
 }
 
 #hero h2 {
-    padding: .3rem 0;
+    /* padding: .3rem 0; */
     font-weight: bolder;
     color: blue;
 }
 
 #hero p {
     font-weight: bolder;
+    padding: 1rem 0;
 }
 
 #hero button{
-    padding: .6rem;
+    padding: .4rem;
     font-weight: bolder;
     border: 1px solid blue;
     cursor: pointer;
+    transition: 300ms;
 }
 
 #hero button:hover{
     background-color: blue;
     color: white;
-    padding: .6rem;
+    padding: .4rem;
     font-weight: bolder;
     border: 1px solid blue;
     cursor: pointer;
@@ -162,20 +164,22 @@ body {
 /* feature  */
 
 #feature {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    height: 60vh;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
 }
 
 #feature .featur-box {
-    width: 250px;
+    /* width: 23%; */
     height: 220px;
+    border: 1px solid rgb(223, 222, 222);
     text-align: center;
     padding: 25px 15px;
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.049);
+    box-shadow: 5px 2px 2px 2px rgba(0, 0, 0, 0.049);
     margin: 1rem 0;
     cursor: pointer;
+
 }
 
 #feature .featur-box p{
@@ -189,6 +193,14 @@ body {
     text-align: center;
 }
 
+#product-container h2{
+    margin-bottom: 1rem;
+}
+
+#product-container p{
+    margin-bottom: 1rem;
+}
+
 #product-container .pro-container-list {
     display: flex;
     flex-direction: row;
@@ -198,22 +210,23 @@ body {
 }
 
 #product-container .product {
-    width: 23%;
-    min-width: 250px;
+    width: 200px;
     padding: 7px;
     border: 1px solid #cce;
-    margin: 7px;
+    margin: 10px 1px;
 }
 
 #product-container .product img{
     width: 100%;
-    min-height: 45vh;
+    max-height: 45vh;
 }
 
 #product-container .product .descend-product {
     text-align: start;
     line-height: 16.2px
 }
+
+/* banner  */
 
 #banner {
     display: flex;
@@ -222,7 +235,8 @@ body {
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 40vh;
+    height: 50vh;
+    line-height: 10px;
     background-image:  linear-gradient(to bottom, rgba(26, 29, 46, 0.52), rgba(20, 12, 48, 0.73)), url("./../img/banner/b2.jpg");
     background-size: cover;
     background-position: center;
@@ -230,8 +244,8 @@ body {
 
 #banner h2{
     color: white;
-    font-size: 37px;
-    padding: 10px;
+    font-size: 33px;
+    padding: 5px;
 }
 
 #banner h2 span {
@@ -241,7 +255,7 @@ body {
 }
 
 #banner button {
-    padding: .8rem 1.5rem;
+    padding: .3rem 1.5rem;
     font-size: 17px;
     font-weight: 700;
     cursor: pointer;
@@ -250,8 +264,7 @@ body {
 /* contact  */
 
 #contact {
-   text-align: center;
-   
+   text-align: center; 
 }
 
 #contact #detail-contact {
@@ -259,15 +272,14 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: 55vh;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 #contact #detail-contact .contact-detail {
-    min-width: 550px;
+    width: 45%;
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    height: 70vh;
     padding: 1rem 0;
 }
 
@@ -285,7 +297,7 @@ body {
 }
 
 #contact .contact-detail form textarea {
-    height: 140px;
+    height: 100px;
     min-width: 100%;
     margin: 7px;
     padding: 0 .3rem;
@@ -293,15 +305,17 @@ body {
 
 
 #detail-contact #contact-map{
-    min-width: 550px;
-    height: 40vh;
-    padding: 1rem;
-    background-color: #465b52;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 70vh;
+    padding: 1rem 0;
 }
 
 .btn-submit {
     min-width: 100%;
-    height: 50px;
+    height: 30px;
     margin: 7px;
 }
 
@@ -444,11 +458,11 @@ footer .copyright {
     }
 
     #product-container .product {
-        margin: 15px;
+        margin: 15px 5px;
     }
 
     #banner {
-        height: 27vh;
+        height: 17vh;
     }
 
     #contact #detail-contact .contact-detail {
@@ -486,8 +500,14 @@ footer .copyright {
     }
 
     #feature .featur-box {
-        width: 150px;
+        min-width: 155px;
+        margin: 0 auto;
     }
+
+    #feature .featur-box img{
+        width: 100%;
+    }
+
 
     #product-container .product {
         width: 100%;
@@ -497,10 +517,14 @@ footer .copyright {
         height: 40vh;
     }
 
+    #banner h2 {
+        font-size: 23px;
+    }
+
     #contact #detail-contact .contact-detail {
-        width: 220px;
+        width: 300px;
         margin: 0 auto;
-        height: 60vh;
+        height: 50vh;
         padding: 1rem 0;
     }
 
@@ -510,6 +534,18 @@ footer .copyright {
 
     #contact .contact-detail form textarea {
         width: 100%;
+    }
+
+    #contact #detail-contact h4 {
+        font-size: 22px;
+        padding: 1rem 0;
+        font-weight: 800;
+    }
+
+    #contact #contact-map {
+        margin-left: 1rem;
+        width: 100%;
+        height: 30vh;
     }
 
     .btn-submit {
