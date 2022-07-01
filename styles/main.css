@@ -486,7 +486,8 @@ footer .copyright {
     }
 
     #feature .featur-box {
-        min-width: 155px;
+        min-width: 75px;
+        height: auto;
         margin: 0 auto;
     }
 
