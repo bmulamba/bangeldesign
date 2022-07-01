@@ -168,6 +168,7 @@ body {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
+    /* align-content: start; */
 }
 
 #feature .featur-box {
@@ -204,8 +205,8 @@ body {
 #product-container .pro-container-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between; */
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
@@ -267,39 +268,32 @@ body {
    text-align: center; 
 }
 
-#contact #detail-contact {
+/* #contact #detail-contact {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 1rem;
-}
+} */
 
-#contact #detail-contact .contact-detail {
-    width: 45%;
+#contact #detail-contact form{
     display: flex;
-    flex-direction: column;
-    height: 70vh;
-    padding: 1rem 0;
-}
-
-#contact .contact-detail form{
-    display: flex;
+    width: 100%;
     flex-direction: column;
     margin: 1rem 0;
 }
 
-#contact .contact-detail form input {
+#contact #detail-contact form input {
     height: 34px;
-    min-width: 100%;
-    margin: 7px;
+    width: 98%;
+    margin: 6px 0;
     padding: 0 .3rem ;
 }
 
-#contact .contact-detail form textarea {
+#contact #detail-contact form textarea {
     height: 100px;
-    min-width: 100%;
-    margin: 7px;
+    width: 98%;
+    margin: 6px 0;
     padding: 0 .3rem;
 }
 
@@ -314,19 +308,11 @@ body {
 }
 
 .btn-submit {
-    min-width: 100%;
+    width: 98%;
     height: 30px;
-    margin: 7px;
+    margin: 7px 0;
 }
 
-iframe {
-    width: 80%;
-    height: 60%;
-}
-
-.contact-detail-number {
-    height: 40%;
-}
 
 /* footer  */
 
@@ -549,7 +535,7 @@ footer .copyright {
     }
 
     .btn-submit {
-        min-width: 100%;
+        width: 100%;
     }
 
 }
@@ -559,8 +545,56 @@ footer .copyright {
 
 /* shop page */
 
-#page-home{
-    background-image: url(./../img/banner/b1.jpg);
+#page-header{
+    background-image: url('./../img/banner/b1.jpg');
     height: 40vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
 }
+
+#page-header h2,
+#page-header p{
+    color: white;
+}
+
+#pagination {
+    text-align: center;
+}
+
+#pagination a {
+    padding: 7px 13px;
+    background-color: #465b52;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+
 /* end shop page */
+
+/* single page  */
+
+#product-detail .single-product-image {
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+
+
+/* end single page  */
