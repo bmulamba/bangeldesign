@@ -674,7 +674,35 @@ footer .copyright {
 
 /* about us  */
 
+#page-about-header {
+    background-image: url('./../img/banner/bb1.jpg');
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
 
+#page-about-header h2, #page-about-header p{
+    color: white;
+}
+
+#head-about {
+    display: flex;
+    align-items: center;
+}
+
+#head-about img {
+    width: 50%;
+    height: auto;
+}
+
+#head-about div {
+    width: 50%;
+    margin-left: 20px;
+}
 
 
 /* end about us  */
