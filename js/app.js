@@ -7,6 +7,8 @@ const MainImg = document.getElementById("MainImg");
 const SmlImg = document.getElementsByClassName("small-img");
 
 
+const items = document.s
+
 bar.addEventListener('click', () => {
     nav.classList.add('active')
 });
