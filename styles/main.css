@@ -546,7 +546,7 @@ footer .copyright {
 
 
 
-/* shop page */
+/* service page */
 
 #page-header{
     background: 
@@ -584,97 +584,7 @@ footer .copyright {
     width: 49%;
     margin: 20px 10px;
 }
-/* end shop page */
-
-/* single page  */
-
-#product-detail {
-    display: flex;
-    margin-top: 10px;
-    flex-wrap: wrap;
-}
-
-#product-detail .single-details {
-    width: 50%;
-    padding-top: 20px;
-}
-
-#product-detail .single-details h2{
-    font-size: 20px;
-}
-
-#product-detail .single-details select{
-    display: block;
-    padding: 5px 10px;
-    margin-bottom: 10px;
-}
-
-#product-detail .single-details input{
-    width: 50px;
-    height: 37px;
-    padding-left: 3px;
-    font-size: 16px;
-    margin-right: 4px;
-}
-
-#product-detail .single-details .button-normal{
-    width: auto;
-    background-color: rgb(99, 169, 134);
-    padding: 8px 10px;
-    color: white;
-    font-weight: 800;
-    outline: none;
-    border: none;
-}
-
-#product-detail .single-details input:focus{
-    outline: none;
-}
-
-#product-detail .single-details h4{
-    padding: 15px 0;
-}
-
-#product-detail .single-product-image {
-    width: 40%;
-    margin-right: 50px;
-}
-
-.small-img-group {
-    display: flex;
-    justify-content: space-between;
-}
-
-.small-img-col {
-    flex-basis: 24%;
-    cursor: pointer;
-}
-
-
-#product-detail .single-details span {
-    line-height: 20px;
-}
-
-@media (max-width: 477px) {
-
-    #product-detail .single-product-image {
-        width: 100%;
-        margin-right: 50px;
-        margin: 0 auto;
-    }
-    
-    #product-detail .single-details {
-        width: 100%;
-        margin-top: .2rem;
-        text-align: justify;
-    }
-
-}
-
-
-/* end single page  */
-
-
+/* end service page */
 
 
 /* about us  */
@@ -700,14 +610,31 @@ footer .copyright {
 }
 
 #head-about img {
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 
 #head-about div {
-    width: 50%;
-    margin-left: 20px;
+    width: 100%;
+    /* margin-left: 20px; */
 }
 
 
 /* end about us  */
+
+/* contact page*/
+#page-contact-header {
+    background-image: url('./../img/banner/b1.jpg');
+    height: 40vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#page-contact-header h2, #page-contact-header p {
+    color: white;
+}
+/* end contact page  */
